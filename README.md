@@ -11,7 +11,9 @@ The PCB can take up to 6 motors (I used 6 NEMA 17) with 6 driver boards that you
 
 ## How to flash the firmware
 
-My project doesn't have a USB-C or other type of interfaces so to flash the firmware you need a ST-LINK V2 where you need to wire up the correct cable from the usb to the board and download the free software STM32CubeProgrammer and you simply need to upload the firmware.
+My project doesn't have a USB-C or other type of interfaces so to flash the firmware you need a ST-LINK V2 where you need to wire up the correct cable from the usb to the board (J18 connector) and download the free software [STM32CubeProgrammer](https://www.st.com/content/st_com/en/stm32cubeprogrammer.html) and you simply need to upload the firmware.
+
+![Connector pinout](media/PCB_pinout.png)
 
 ## Filament reccomendation
 
