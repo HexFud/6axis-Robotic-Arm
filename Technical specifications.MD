@@ -1,4 +1,4 @@
-# Technical Specifications — 6-Axis Robot Controller
+# Technical Specifications
 
 ## 1. Power Supply
 
