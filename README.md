@@ -10,7 +10,20 @@ I designed the PCB that can take up to 6 motors (I used 6 NEMA 17) with 6 driver
 
 1. **6 limit switches** for homing each joint
 2. **A CAN Bus interface**
-3. **An emergency stop button socket** for safety reason. **Notice ⚠️** The board without the ESTOP button won't power on, if you want to avoid this you can short 2 pins of the J21 connector with a jumper (please mind your safety)
+3. **An emergency stop button socket** for safety reason. 
+
+## External connections breakdown
+
+1. **E-STOP (J21)** The emergency stop circuit is NC so the board without this button won't power on, if you want to avoid this you can short 2 pins of the J21 connector with a jumper (please mind your safety)
+2. **CAN Bus (J22)** This is the port to make the PCB comunicate with the PC and it only has 2 pins CAN_H and CAN_L if you want to send commands directly to the board you need to have a USB-CAN adapter
+3. **Power button (J19)** The socket on the PCB has 4 pins
+ 
+| Pin | Function | Where to connect |
+| :---: | :--- | :--- |
+| **1** | `GND` | Switch contact + LED Negative (`-`) wire |
+| **2** | `PWR` | Switch contact |
+| **3** | `+3V3` | LED Positive (`+`) wire |
+| **4** | `Reserved` | *Do not connect any wire to it* |
 
 ## Mechanical design and why I chose certain components
 
