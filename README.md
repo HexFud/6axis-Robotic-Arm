@@ -37,6 +37,19 @@ My project doesn't have a USB-C or other type of interfaces so to flash the firm
 
 ![Connector pinout](media/PCB_pinout.png)
 
+Steps to reproduce (note that you need to do both):
+
+In Arduino IDE:
+1. Install Arduino IDE
+2. Paste https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json into prefernces -> additional board manager URL's
+3. Search STM32 into the boards stab and install it
+4. Go in tools -> board -> STM32 MCU based boards and select Generic STM32F4 series
+5. Go in tools -> board part number and select Generic F446RETx
+6. Go to sketch -> export compiled binary
+
+In STM32CubeProgrammer:
+1. Install the software from the link above
+
 ## Filament reccomendation
 
 Because stepper motors and the drivers generate heat around 50°C-60°C I strongly reccomend to use filaments like PETG, ABS or ASA instead of standard PLA ensuring the plastic won't soften, warp or melt during intensive load.
