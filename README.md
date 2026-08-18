@@ -49,6 +49,11 @@ In Arduino IDE:
 
 In STM32CubeProgrammer:
 1. Install the software from the link above
+2. Insert the ST-Link V2 USB into the pc
+3. Connect the pins explained above (do not connect the 24V power supply, the ST-Link has enough power to power the chip to flash)
+4. In STM32CubeProgrammer ensure that ST-LINK is selected and click connect
+5. Go in the erasing & programming tab and select the previously exported .bin file
+6. Click start programming and if everything went right you'll see Download verified successfully
 
 ## Filament reccomendation
 
